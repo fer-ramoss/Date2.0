@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resposta do convite para sair</title>
+    <link rel="stylesheet" href="Resposta.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="question">Onde você gostaria de ir?</div>
+        <div class="options">
+            <form action="processa_form.php" method="post">
+                <!-- <h2>Escolha um ou mais lugares:</h2> -->
+                <input type="checkbox" name="lugares[]" value="cinema">Cinema<br>
+                <input type="checkbox" name="lugares[]" value="barzinho">Aloha Hawaiian Restaurant<br>
+                <input type="checkbox" name="lugares[]" value="cafeteria">Jardim Food Park<br>
+                <input type="checkbox" name="lugares[]" value="cafeteria">Vila Rusticana<br>
+                <br>
+                <label>Sugestões:</label>
+                <input type="text" name="opiniao">
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+
+            <!-- <script>
+    const submitButton = document.getElementById("submit-button");
+
+    submitButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      window.location.href = "https://seusite.com/confirmacao.html";
+    });
+  </script> -->
+</body>
+
+</html>
